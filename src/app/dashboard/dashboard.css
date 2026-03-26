@@ -1,0 +1,70 @@
+/* ---------- Dashboard Layout ---------- */
+.dashboard-container {
+display: flex;
+height: 100vh;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ---------- Sidebar ---------- */
+.sidebar {
+width: 230px;
+background: linear-gradient(135deg, #764ba2, #667eea);
+color: white;
+padding: 20px;
+display: flex;
+flex-direction: column;
+}
+
+/* Dashboard Title */
+.logo {
+text-align: center;
+margin-bottom: 25px;
+font-size: 22px;
+}
+
+/* Sidebar Menu Items */
+.menu-item {
+padding: 12px 15px;
+margin-bottom: 10px;
+border-radius: 6px;
+cursor: pointer;
+font-size: 15px;
+transition: background 0.3s;
+}
+
+/* Hover Effect */
+.menu-item:hover {
+background: rgba(255, 255, 255, 0.2);
+}
+
+/* Logout Button */
+.logout {
+margin-top: auto;
+background: #ff4d4d;
+text-align: center;
+}
+
+/* ---------- Content Area ---------- */
+.content {
+flex: 1;
+padding: 40px;
+background: #f4f6fb;
+}
+
+/* Welcome Message */
+.welcome {
+margin-bottom: 30px;
+color: #333;
+}
+
+/* Section Headings */
+.content h3 {
+margin-bottom: 10px;
+color: #444;
+}
+
+/* Text Styling */
+.content p {
+color: #666;
+font-size: 14px;
+}

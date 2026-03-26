@@ -1,0 +1,78 @@
+<div class="dashboard-container">
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+
+    <h2 class="logo">My Dashboard</h2>
+
+    <div class="menu-item" (click)="renderDashboard()">
+      🏠 Dashboard
+    </div>
+
+    <div class="menu-item" (click)="renderProjects()">
+      📁 Projects
+    </div>
+
+    <div class="menu-item" (click)="renderMessages()">
+      💬 Messages
+    </div>
+
+    <div class="menu-item" (click)="renderProfile()">
+      👤 Profile
+    </div>
+
+    <div class="menu-item" (click)="renderAnalytics()">
+      📊 Analytics
+    </div>
+
+    <div class="menu-item logout" (click)="logout()">
+      🚪 Logout
+    </div>
+
+  </div>
+
+
+  <!-- Main Content Area -->
+  <div class="content">
+
+    <!-- Welcome Message -->
+    <h2 class="welcome">{{ welcomeMessage }}</h2>
+
+
+    <!-- Dashboard Section -->
+    <div *ngIf="activeSection === 'dashboard'">
+      <h3>Dashboard Overview</h3>
+      <p>Welcome to your dashboard panel.</p>
+    </div>
+
+
+    <!-- Projects Section -->
+    <div *ngIf="activeSection === 'projects'">
+      <h3>Your Projects</h3>
+      <p>Your projects will appear here.</p>
+    </div>
+
+
+    <!-- Messages Section -->
+    <div *ngIf="activeSection === 'messages'">
+      <h3>Your Messages</h3>
+      <p>Your messages will appear here.</p>
+    </div>
+
+
+    <!-- Profile Section -->
+    <div *ngIf="activeSection === 'profile'">
+      <h3>Your Profile</h3>
+      <p>Your profile details will appear here.</p>
+    </div>
+
+
+    <!-- Analytics Section -->
+    <div *ngIf="activeSection === 'analytics'">
+      <h3>Analytics</h3>
+      <p>Analytics data will appear here.</p>
+    </div>
+
+  </div>
+
+</div>

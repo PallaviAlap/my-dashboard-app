@@ -1,0 +1,23 @@
+<div class="container">
+
+<h2>Sign Up</h2>
+
+<input type="text" placeholder="Full Name" [(ngModel)]="fullname">
+
+<input type="email" placeholder="Email" [(ngModel)]="email">
+
+<input [type]="showPassword ? 'text' : 'password'" placeholder="Password" [(ngModel)]="password">
+
+<label>
+<input type="checkbox" (change)="togglePassword()">
+Show Password
+</label>
+
+<button (click)="register()">Register</button>
+
+<p>
+Already have an account?
+<a routerLink="/">Sign In</a>
+</p>
+
+</div>

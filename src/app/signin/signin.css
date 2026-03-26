@@ -1,0 +1,41 @@
+body{
+font-family: Arial;
+}
+
+.container{
+width:320px;
+margin:auto;
+margin-top:120px;
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 8px 20px rgba(0,0,0,0.2);
+}
+
+input{
+width:100%;
+padding:10px;
+margin:8px 0;
+border-radius:5px;
+border:1px solid #ccc;
+}
+
+button{
+width:100%;
+padding:10px;
+background:#764ba2;
+color:white;
+border:none;
+border-radius:5px;
+cursor:pointer;
+margin-top:10px;
+}
+
+.backup{
+background:orange;
+}
+
+a{
+text-decoration:none;
+color:#764ba2;
+}
