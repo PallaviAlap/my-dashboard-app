@@ -1,10 +1,10 @@
-body {
-    font-family: Arial;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+.page {
+    height: 100vh;              /* full screen height */
+    display: flex;              /* enable flexbox */
+    justify-content: center;    /* horizontal center */
+    align-items: center;        /* vertical center */
     background: linear-gradient(135deg, #764ba2, #667eea);
+    margin: 0;
 }
 
 .container {
@@ -15,7 +15,7 @@ body {
     box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
 
-input, select {
+input {
     width: 100%;
     padding: 10px;
     margin: 8px 0;
@@ -29,22 +29,18 @@ button {
     background: #764ba2;
     color: white;
     border: none;
-    cursor: pointer;
     border-radius: 5px;
     margin-top: 10px;
+    cursor: pointer;
 }
 
-a { text-decoration: none; color: #764ba2; }
-
 label {
-font-size: 14px;
-display:flex;
-align-items:center;
-gap:5px;
-margin-top:5px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 
 h2 {
-text-align:center;
-margin-bottom:15px;
+    text-align: center;
 }
